@@ -76,7 +76,8 @@ body{
 .footer .reach{font-size:11px; text-align:right; color:var(--soft); line-height:1.9;}
 .footer .reach b{color:var(--fg); font-weight:700;}
 
-.ph{color:var(--ph); border-bottom:1px dashed var(--faint); padding-bottom:1px;}
+.ph{color:var(--ph); border-bottom:1px dashed var(--faint); padding-bottom:1px; text-decoration:none;}
+a.ph:hover{color:var(--fg); border-bottom-color:var(--fg);}
 
 @page{ size:Letter; margin:0; }
 </style>
@@ -91,14 +92,8 @@ body{
       <div class="role">AI workflows &amp; automation for importers, customs brokers, and 3PLs</div>
       <p class="lede">I design, build, and deploy tools that take manual work out of import operations. My previous work includes inbox-to-CRM document automation and HTS classification grounded in customs rulings. Built by someone who works inside a 3PL.</p>
       <div class="contacts">
-        <div><b>Email</b> &nbsp;<span class="ph">[colinxiang11@gmail.com]</span></div>
-        <div><b>LinkedIn</b> &nbsp;<span class="ph">[https://www.linkedin.com/in/colinxiang/]</span></div>
-        <div><b>Demo</b> &nbsp;<span class="ph">[https://customsbotv3.vercel.app/]</span></div>
+        <div><b>Email</b> &nbsp;<a class="ph" href="mailto:colinxiang11@gmail.com">colinxiang11@gmail.com</a></div>
       </div>
-    </div>
-    <div class="headshot">
-      <!-- Swap the src below for your photo, e.g. <img src="headshot.jpg" alt="Colin"> -->
-      <img src="headshot2.png" alt="Colin">
     </div>
   </header>
 
@@ -119,11 +114,12 @@ body{
   <section class="case">
     <div class="caserow"><span class="num">02</span><h3>CustomsBot — HTS classification, grounded in CBP rulings</h3></div>
     <div class="tags"><span>Type:</span> Product (solo build) &nbsp;·&nbsp; <span>Status:</span> <span class="ph">Live / pilot</span></div>
+    <div><b>Demo:</b> &nbsp;<a class="ph" href="https://customsbotv3.vercel.app/" target="_blank" rel="noopener">customsbotv3.vercel.app</a></div>
     <p>Classifies products to Harmonized Tariff Schedule codes using GRI methodology, grounded in the USITC tariff schedule and CBP CROSS rulings. Low-certainty calls are confidence-flagged and escalated to a human. This software is built for broker and importer workflows.</p>
     <div class="metrics">
-      <div class="metric"><div class="v"><span class="ph">~N</span></div><div class="k">HTS headings indexed</div></div>
-      <div class="metric"><div class="v">CROSS</div><div class="k">CBP rulings integrated</div></div>
-      <div class="metric"><div class="v">Flagged</div><div class="k">Confidence-scored output</div></div>
+      <div class="metric"><div class="v"><span class="ph">~5600</span></div><div class="k">HTS subheadings indexed</div></div>
+      <div class="metric"><div class="v">30 seconds</div><div class="k">Time to classification</div></div>
+      <div class="metric"><div class="v">Duty rate, line of reasoning</div><div class="k">Ensures wholistic, auditable classification</div></div>
     </div>
     <div class="stack"><b>STACK</b> &nbsp; FastAPI · Next.js · Python · SQLite</div>
   </section>
@@ -140,9 +136,8 @@ body{
   <footer class="footer">
     <div class="cta">Have a manual workflow worth killing? Let's scope an initial project.</div>
     <div class="reach">
-      <div><b>E</b> &nbsp;<span class="ph">[colinxiang11@gmail.com]</span></div>
-      <div><b>L</b> &nbsp;<span class="ph">[https://www.linkedin.com/in/colinxiang/]</span></div>
-      <div><b>W</b> &nbsp;<span class="ph">[https://customsbotv3.vercel.app/]</span></div>
+      <div><b>E</b> &nbsp;<a class="ph" href="mailto:colinxiang11@gmail.com">colinxiang11@gmail.com</a></div>
+      <div><b>W</b> &nbsp;<a class="ph" href="https://customsbotv3.vercel.app/" target="_blank" rel="noopener">customsbotv3.vercel.app</a></div>
     </div>
   </footer>
 
